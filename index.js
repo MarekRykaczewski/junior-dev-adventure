@@ -16,3 +16,13 @@ function animate() {
 }
 
 animate()
+
+window.addEventListener('keydown', (event) => {
+  switch (event.key) {
+    case 'w':
+      if (player.velocity.y === 0) {
+        player.velocity.y = -20
+      } 
+      break
+  }
+})
